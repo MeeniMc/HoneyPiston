@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+      "has_the_recipe_honey_piston": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "honey_piston:honey_piston"
+        }
+      },
+      "has_honeycomb": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [{"item": "minecraft:honeycomb"}]
+        }
+      }
+  },
+  "requirements": [
+    [
+      "has_the_recipe_honey_piston",
+      "has_honeycomb"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:sticky_piston"
+    ]
+  }
+}
